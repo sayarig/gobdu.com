@@ -1,50 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Head content remains the same -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gobdu - Innovative Solutions for a Better Future</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gobdu</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Basic styles for the dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+    /* Add background image and text for the top section */
+    #about-us {
+      background-image: url('./public/images/header-background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    /* Styling for the headline text */
+    #about-us h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    #about-us p {
+      font-size: 18px;
+    }
+
+    /* Full-width background color sections */
+    #demo-video {
+      background-color: #f2f2f2; /* Light gray */
+      padding: 50px 20px;
+    }
+
+    /* Flexbox container for the video and text side by side */
+    .video-text-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* Video and text styling */
+    .video-container, .text-container {
+      flex: 1;
+      min-width: 300px; /* Ensures flexibility on smaller screens */
+    }
+
+    .text-container {
+      background-color: white;
+      border: 1px solid #ddd;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    #partners {
+      background-color: #e0f7fa; /* Light blue */
+      padding: 50px 20px;
+    }
+
+    /* Ensure the sections stretch full width */
+    section {
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+    }
+
+    /* Container for partners section */
+    .partners-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .partners-container .partner-logo {
+      margin: 10px;
+    }
+
+    .partner-logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+  </style>
 </head>
 <body>
-
-<header>
+  <!-- Header Section -->
+  <header>
     <div class="logo">
-        <img src="gobdu-logo.png" alt="Gobdu Logo">
+      <img src="./public/images/gobdu-logo.png" alt="Gobdu Logo" width="150">
     </div>
     <nav>
-        <ul>
-            <li>
-                <a href="#">Our Products</a>
-                <ul>
-                    <li><a href="https://quickapplyloan.com" target="_blank">Quick Apply Loan</a></li>
-                    <!-- Add more products here if needed -->
-                </ul>
-            </li>
-            <!-- You can add more navigation items here -->
-        </ul>
+      <ul>     
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Our Products</a>
+          <div class="dropdown-content">
+            <a href="https://quickapplyloan.com" target="_blank">Quick Apply Loan</a>
+          </div>
+        </li>
+        <li><a href="Team.html">Meet the Team</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<section>
-    <div class="card">
-        <h3>About Gobdu</h3>
-        <p>Gobdu is a forward-thinking company focused on delivering innovative solutions that simplify life. Our products aim to revolutionize industries, with a particular focus on finance, automation, and technology. At Gobdu, we are committed to creating user-centric solutions that drive impact.</p>
+  <!-- About Us Section with Background Image and Headline -->
+  <section id="about-us">
+    <h1>Lorem Ipsum Headline</h1>
+    <p>Gobdu is a forward-thinking company focused on delivering innovative solutions that simplify life. Our products aim to revolutionize industries, with a particular focus on finance, automation, and technology.</p>
+  </section>
+
+  <!-- Product Demo Video Section with Full Width Background -->
+  <section id="demo-video">
+    <h2>Product Demo</h2>
+    <div class="video-text-container">
+      <!-- Video Section -->
+      <div class="video-container">
+        <video width="100%" controls>
+          <source src="./public/videos/loanSwift1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Text Section on a card -->
+      <div class="text-container">
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id sapien nisi. Curabitur fermentum facilisis nibh, id iaculis urna efficitur sit amet. Pellentesque pretium nisi vitae nulla efficitur, nec viverra metus aliquet.</p>
+        <p>Donec vehicula dui at nunc accumsan, sit amet commodo risus tincidunt. Aenean tincidunt turpis in neque scelerisque laoreet. Nullam vestibulum velit non nunc gravida iaculis.</p>
+        <p>Donec vehicula dui at nunc accumsan, sit amet commodo risus tincidunt. Aenean tincidunt turpis in neque scelerisque laoreet. Nullam vestibulum velit non nunc gravida iaculis.</p>
+        <p>Donec vehicula dui at nunc accumsan, sit amet commodo risus tincidunt. Aenean tincidunt turpis in neque scelerisque laoreet. Nullam vestibulum velit non nunc gravida iaculis.</p>
+        <p>Donec vehicula dui at nunc accumsan, sit amet commodo risus tincidunt. Aenean tincidunt turpis in neque scelerisque laoreet. Nullam vestibulum velit non nunc gravida iaculis.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-        <h3>Meet the Team</h3>
-        <p>Our team is composed of experienced professionals from diverse industries, united by a passion for innovation and a commitment to excellence. Together, we bring the expertise needed to transform challenges into opportunities and create products that matter.</p>
+  <!-- Our Partners Section with Different Background Color -->
+  <section id="partners">
+    <h2>Our Partners</h2>
+    <div class="partners-container">
+      <div class="partner-logo">
+        <img src="./public/images/logo_exp.png" alt="Partner 1" width="150" height="150">
+      </div>
+      <div class="partner-logo">
+        <img src="./public/images/logo_cascadia.jpg" alt="Partner 2" width="150" height="150">
+      </div>
     </div>
-</section>
+  </section>
 
-<footer>
-    <p>Our Collaborating Companies:</p>
-    <img src="logo_cascadia.jpg" alt="Cascadia Fintech Coalition">
-    <img src="logo_exp.png" alt="EXP Realty">
-    <!-- Add more logos as needed -->
-</footer>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Gobdu. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>

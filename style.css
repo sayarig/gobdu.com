@@ -143,3 +143,16 @@ footer img {
         margin-left: 0;
     }
 }
+
+.partners-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between logos */
+    margin-top: 20px;
+  }
+  
+  .partner-logo img {
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  

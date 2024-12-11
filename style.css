@@ -103,7 +103,7 @@ section h2 {
 
 section p {
     text-align: center;
-    font-size: 16px;
+    font-size: 22.81px;
     line-height: 1.5;
 }
 
@@ -157,10 +157,10 @@ footer img {
   }*/
   
   .partners-container {
-    background-color: #f5f5f5; /* Light grey background */
+    background-color: #959090;
     padding: 20px; 
     border-radius: 10px; 
-    text-align: center; 
+    text-align: center;
   }
   
   .partner-logo {
@@ -177,4 +177,5 @@ footer img {
   .partner-logo img {
     max-width: 100%;
     border-radius: 5px;
+    
   }

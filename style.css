@@ -101,7 +101,7 @@ section {
 section h2 {
     color: #333;
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.6;
 }
 
@@ -109,12 +109,14 @@ h3 {
     text-align: center;
     margin-top: 30px;
     margin-bottom:35px;
+    font-size: 24px;
 }
 
 section p {
     font-size: 20px;
     font-family: Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
+    text-align: justify;
 }
 
 footer {

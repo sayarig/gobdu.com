@@ -6,41 +6,7 @@
   <title>Gobdu</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Basic styles for the dropdown */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #f1f1f1;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    .dropdown:hover .dropbtn {
-      background-color: #3e8e41;
-    }
-
-    /* Add background image and text for the top section */
+  /* Add background image and text for the top section */
     #about-us {
       background-image: url('./public/images/header-background.jpg');
       background-size: cover;
@@ -71,52 +37,32 @@
     .video-text-container {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
+      align-items: stretch;
       gap: 20px;
     }
 
     /* Video and text styling */
     .video-container, .text-container {
       flex: 1;
-      min-width: 300px; /* Ensures flexibility on smaller screens */
+      height: auto;
     }
 
     .text-container {
-      background-color: white;
+      /*background-color: white;*/
       border: 1px solid #ddd;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       padding: 20px;
       border-radius: 8px;
+      background: rgb(45, 62, 80);
+      color: rgb(255, 255, 255);
+      
     }
 
-    #partners {
-      background-color: #e0f7fa; /* Light blue */
-      padding: 50px 20px;
-    }
-
-    /* Ensure the sections stretch full width */
+   /* Ensure the sections stretch full width */
     section {
       width: 100vw;
       margin-left: calc(50% - 50vw);
     }
-
-    /* Container for partners section */
-    .partners-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-    .partners-container .partner-logo {
-      margin: 10px;
-    }
-
-    .partner-logo img {
-      max-width: 100%;
-      height: auto;
-    }
-
   </style>
 </head>
 <body>
@@ -159,25 +105,24 @@
 
       <!-- Text Section on a card -->
       <div class="text-container">
-        <h3>Lorem Ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id sapien nisi. Curabitur fermentum facilisis nibh, id iaculis urna efficitur sit amet. Pellentesque pretium nisi vitae nulla efficitur, nec viverra metus aliquet.</p>
-        <p>Donec vehicula dui at nunc accumsan, sit amet commodo risus tincidunt. Aenean tincidunt turpis in neque scelerisque laoreet. Nullam vestibulum velit non nunc gravida iaculis.</p>
-        <p>Donec vehicula dui at nunc accumsan, sit amet commodo risus tincidunt. Aenean tincidunt turpis in neque scelerisque laoreet. Nullam vestibulum velit non nunc gravida iaculis.</p>
-        <p>Donec vehicula dui at nunc accumsan, sit amet commodo risus tincidunt. Aenean tincidunt turpis in neque scelerisque laoreet. Nullam vestibulum velit non nunc gravida iaculis.</p>
-        <p>Donec vehicula dui at nunc accumsan, sit amet commodo risus tincidunt. Aenean tincidunt turpis in neque scelerisque laoreet. Nullam vestibulum velit non nunc gravida iaculis.</p>
+        <h3 style="text-align: center; color: rgb(33, 187, 211);">Simplify Home Loan Processing with QuickApplyLoan </h3>
+        <p>QuickApplyLoan  helps credit unions streamline home loan processing by automating document collection, ensuring compliance, and offering real-time updates.</p>
+        <p>With tools like Plaid for instant financial verification, our intuitive platform reduces the manual works, lowers costs, and enhances the client experience—giving credit unions a competitive edge.</p>
+        <p>Visit <a href="https://www.QuickApplyLoan.com" target="_blank" style="color: rgb(33, 187, 211);">QuickApplyLoan.com</a> to learn more or schedule a demo.</p>
+        <p>Transform your loan processing today!</p>
       </div>
     </div>
   </section>
 
   <!-- Our Partners Section with Different Background Color -->
   <section id="partners">
-    <h2>Our Partners</h2>
-    <div class="partners-container">
+    <h2 style="color: rgb(33, 187, 211);">Our Partners</h2>
+    <div class="partners-container" >
       <div class="partner-logo">
-        <img src="./public/images/logo_exp.png" alt="Partner 1" width="150" height="150">
+        <img src="./public/images/logo_exp.png" alt="Partner 1">
       </div>
       <div class="partner-logo">
-        <img src="./public/images/logo_cascadia.jpg" alt="Partner 2" width="150" height="150">
+        <img src="./public/images/logo_cascadia.jpg" alt="Partner 2">
       </div>
     </div>
   </section>
